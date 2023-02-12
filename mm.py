@@ -26,8 +26,8 @@ def ud():
     if opt == '1':
         os.system('xdg-open https://facebook.com/ft.alvi.18')
         FD()
-        return None
-    None('\n\x1b[1;31mEXIT\x1b[0;97m')
+        return opt
+    opt('\n\x1b[1;31mEXIT\x1b[0;97m')
 
 
 def FD():
@@ -39,8 +39,8 @@ def FD():
     if opt == '1':
         os.system('xdg-open https://facebook.com/𝙈𝙍-𝘼𝘿𝙊𝙍-107968471946247')
         o()
-        return None
-    None('\n\x1b[1;31mEXIT\x1b[0;97m')
+        return opt
+    opt('\n\x1b[1;31mEXIT\x1b[0;97m')
 
 
 def o():
@@ -58,17 +58,17 @@ def o():
         i()
     if opt == '2':
         os.system('xdg-open https://facebook.com/ft.alvi.18')
-        return None
+        return opt
     if opt == '3':
         os.system('xdg-open https://youtube.com/@Learnwithshuvo928')
-        return None
+        return opt
     if opt == '4':
         os.system('xdg-open https://facebook.com/𝙈𝙍-𝘼𝘿𝙊𝙍-107968471946247')
         return opt
     if opt == '0':
         os.system('exit')
-        return None
-    None('\n\x1b[1;31m  Choose valid option\x1b[0;97m')
+        return opt
+    opt('\n\x1b[1;31m  Choose valid option\x1b[0;97m')
 
 
 import os,sys,time,json,random,re,string,platform,base64,uuid
@@ -170,9 +170,9 @@ logo =                                          ("""
   
 
 \033[1;34m   ____  _   __      ______________  ______
-\033[1;33m  / __ \/ | / /     / ____/  _/ __ \/ ____/
+\033[1;32m  / __ \/ | / /     / ____/  _/ __ \/ ____/
 \033[1;91m / / / /  |/ /_____/ /_   / // /_/ / __/   
-\033[1;35m/ /_/ / /|  /_____/ __/ _/ // _, _/ /___   
+\033[1;33m/ /_/ / /|  /_____/ __/ _/ // _, _/ /___   
 \033[1;91m\____/_/ |_/     /_/   /___/_/ |_/_____/   
 
 
