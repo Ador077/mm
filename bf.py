@@ -37,13 +37,21 @@ loop = 0
 oks = []
 cps = []
 
-def xox(z):
-	for e in z + '\n':
-		sys.stdout.write(e)
-		sys.stdout.flush()
-		time.sleep(0.01)
+def clear():
+    os.system('clear')
+    print(logo)
+from time import localtime as lt
+from os import system as cmd
+ltx = int(lt()[3])
+if ltx > 12:
+    a = ltx-12
+    tag = "PM"
+else:
+    a = ltx
+    tag = "AM"
+    
 
-logo =("""\033[0;92m
+logo=("""\033[0;92m
 \033[1;34m   ____  _   __      ______________  ______
 \033[1;32m  / __ \/ | / /     / ____/  _/ __ \/ ____/
 \033[1;91m / / / /  |/ /_____/ /_   / // /_/ / __/   
@@ -62,13 +70,7 @@ logo =("""\033[0;92m
 \033[1;32m║════════════════════════════════════════║
 \033[1;32m║              \033[1;32mAlvi MENU [👑]            ║
 \033[1;91m╚════════════════════════════════════════╝""")
-	print("")
-	xox('            %s》%s》%s》%sUIDCR3K%s《%s《%s《'%(M,H,B,H,B,H,M))
-	print("")
-
-def linex():
-	print("%s════════════════════════════════════════════%s\n"%(Z,N))
-
+	
 
 def result(OK,cp):
 	if len(OK) != 0 or len(cp) != 0:
